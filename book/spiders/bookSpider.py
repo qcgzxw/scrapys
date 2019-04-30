@@ -16,6 +16,6 @@ class BookSpider(scrapy.Spider):
     def parse_article(self, response):
         item = BookItem()
         item['title'] = response.xpath('//header["class=top"]/span/text()').extract()
-        item['content'] = response.xpath('//div["id=chaptercontent"]/p').extract()[1]
+        item['content'] = response.xpath('//div["id=chaptercontent"]').extract()
         item['url'] = response.url
         yield item
