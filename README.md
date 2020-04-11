@@ -11,5 +11,17 @@ pip install requirements.txt
 [https://docs.scrapy.org/en/latest/intro/tutorial.html](https://docs.scrapy.org/en/latest/intro/tutorial.html)
 ## scrapy project name
 ### biqudao
-笔趣阁（已失效）
+笔趣岛（已失效）
+```python
+scrapy crawl biqudao -o test.csv
+```
 
+爬取对应书籍
+### ipipnet 
+ipip.net
+
+爬取IP段（例如Netflix Google Youtube）
+
+```python
+scrapy crawl ipip.net -o test.json
+```
