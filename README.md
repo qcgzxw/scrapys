@@ -23,5 +23,6 @@ ipip.net
 爬取IP段（例如Netflix Google Youtube）
 
 ```python
-scrapy crawl ipip.net -o test.json
+# 爬https://whois.ipip.net/search/GOOGLE%20LLC
+scrapy crawl ipip.net -o test.json -a keyword=GOOGLE%20LLC
 ```
