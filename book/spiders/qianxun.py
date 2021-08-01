@@ -27,7 +27,7 @@ class Qianxun(scrapy.Spider):
         )
         if len(js_inner_content) > 0:
             content2 = scrapy.Selector(text="<div>" + js_inner_content[0] + "</div>")
-            item['content'][0] += content2.xpath("//div/text()").extract()[0]
+            item['content'].extend(content2.xpath("//div/text()").extract())
 
         yield item
         next_page = response.xpath('//div[@class="bottem2"]/a[last()]/text()').extract()[0]
