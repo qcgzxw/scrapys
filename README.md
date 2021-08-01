@@ -9,7 +9,16 @@ pip install requirements.txt
 * 使用scrapy命令
 
 [https://docs.scrapy.org/en/latest/intro/tutorial.html](https://docs.scrapy.org/en/latest/intro/tutorial.html)
+
+* 爬虫使用案例示范：
+
+[吃灰kindle复活计——利用kindle看网络小说](https://www.qcgzxw.cn/3070.html)
+
 ## scrapy project name
+### qianxuntxt
+```python
+scrapy crawl qianxun -o test.csv
+```
 ### biqudao
 笔趣岛（已失效）
 ```python

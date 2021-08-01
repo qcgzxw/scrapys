@@ -2,7 +2,7 @@ import scrapy
 from book.items import BookItem
 
 
-class BookSpider(scrapy.Spider):
+class Biqudao(scrapy.Spider):
     name = "biqudao"
     allowed_domains = ["biqudao.com"]
     start_urls = (
