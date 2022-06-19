@@ -2,7 +2,7 @@
 import pandas as pd
 
 books = pd.read_csv('test.csv')
-book_name = '我的老千生涯.md'
+book_name = 'test.md'
 
 current_chapter = ''
 first_volume_name = '第1章'

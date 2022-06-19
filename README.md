@@ -19,6 +19,10 @@ pip install requirements.txt
 ```python
 scrapy crawl qianxun -o test.csv
 ```
+### ranwen
+```python
+scrapy crawl ranwen -o test.csv
+```
 ### biqudao
 笔趣岛（已失效）
 ```python
